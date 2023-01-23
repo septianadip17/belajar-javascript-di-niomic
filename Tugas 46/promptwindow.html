@@ -1,0 +1,20 @@
+<html>
+
+<body>
+
+    <button onclick="jawab()">Klik Saya</button>
+
+    <p id="jawaban"></p>
+
+    <script>
+        function jawab() {
+            var nama = prompt("Masukan Nama Kamu", "Nama");
+            if (nama != null) {
+                document.getElementById("jawaban").innerHTML =
+                    "Helo " + nama + " apa kabar?";
+            }
+        }
+    </script>
+</body>
+
+</html>

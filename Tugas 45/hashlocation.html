@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <p id="hash"></p>
+
+    <button onclick="hash_location()">Panggil Niomic 1</button>
+    <button onclick="hash_location2()">Panggil Niomic 2</button>
+
+    <script type="text/javascript">
+        function hash_location() {
+            location.hash = "niomic1";
+            var x = "Sekarang anchornya" + location.hash;
+            document.getElementById("hash").innerHTML = x;
+        }
+
+        function hash_location2() {
+            location.hash = "niomic2";
+            var x = "Sekarang anchornya" + location.hash;
+            document.getElementById("hash").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

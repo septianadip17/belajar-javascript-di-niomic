@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <style>
+        .droptarget{
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+    </head>
+    <body>
+        <p>Drag Element diantara dua kotak.</p>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag Saya!</p>
+        </div>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        
+        </div>
+
+        <p id="objectText"></p>
+
+        <script text="text/javascript" src="dragdrop.js">
+
+        </script>
+    </body>
+</html>
